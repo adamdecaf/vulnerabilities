@@ -2,26 +2,26 @@
 
 #### Notice
 
-This project seems to have been fairly abandoned in recent times [from it's previous home on Google Code](https://code.google.com/p/fuzzdb/) so this is a revamp of it. Refer to the original [licenses](#License) for legal questions (or contact me).
+This project seems to have been fairly abandoned in recent times [from it's previous home on Google Code](https://code.google.com/p/fuzzdb/) so this is a revamp of it. Refer to the original [licenses](#License) for legal questions (or contact me). I'm working on a pretty large overhaul of its contents.
 
 #### Introduction
 
 Too much new software is vulnerable to the attack sequences of yesteryear. This suggests a testing approach: a comprehensive set of known attack pattern sequences can be leveraged for use in targeted fuzzing when testing for exploitable conditions in new applications.
 
-This is especially useful for many filter bypass type exploits. Identical encoding sequences have been observed to bypass filters for more than one application. Examples can be observed in categories including xss, sqli, evil script upload, OS command execution, traversal issues, directory indexing bugs, source code revealing vulnerabilities, etc. In recent times, for example, new embedded webservers were discovered to be vulnerable to directory traversal issues triggered by encodings that exploited Microsoft IIS in 2000.
+This is especially useful for many filter bypass type exploits. Identical encoding sequences have been observed to bypass filters for more than one application. Examples can be observed in categories including xss, sqli, evil script upload, OS command execution, traversal issues, directory indexing bugs, source code revealing vulnerabilities, etc. In recent times, for example, new embedded webservers were discovered to be vulnerable to directory traversal issues triggered by encodings that exploited Microsoft IIS in 2000. This largely happens because the same high-level ideas are re-implemented or "approved upon" in the new language of the month, without a deep care for the fundamental risks involved.
 
 This approach is also useful for targeted use of brute force for discovery using, for example, lists of known vulnerable scripts sorted by platform type, default locations of critical files of popular apps, high quality lists of common directory names.
 
-Primary sources used for attack pattern research:
+The original sources primary sources used for attack pattern research:
 
-- researching old web exploits for repeatable attack strings
-- penetration tests i've performed in the past
+- pesearching old web exploits for repeatable attack strings
+- penetration tests
 - scraping scanner patterns from my own http logs
 - various books, articles, blog posts
 - documentation for popular applications
 - analysis of default application installs
 
-notable sources and other contributors:
+Notable sources and other contributors:
 
 - metasploit wmap http://www.metasploit.com/redmine/projects/framework/wiki/WMAP
 - dirb http://www.open-labs.org/
@@ -36,17 +36,30 @@ notable sources and other contributors:
 
 Some files are derived primarily from other fuzzers, and are credited in the files with comments formatted like:
 
-##### This file is primarily derived from source xyz
+#### Table of Contents
 
-Others have additional instructions for payload use in a similar comment format at the top of the file
+  - [Brute Force Attacks](brute-force.md)
+  - [Denial of Service Attacks](denial-of-service.md)
+  - [Error Bounds Attacks](error-bounds.md)
+  - [Failed Crypto](failed-crypto.md)
+  - [Injection Attacks](injection-attacks.md)
+  - [Malformed / Missing Authentication](malformed-auth.md)
+  - [Overflow / Underflow Attacks](overflow.md)
+  - [Phishing Attacks](phishing.md)
+  - [Physical Compromise](physical-compromise.md)
+  - [Privilege escalation](privilege-escalation.md)
+  - [Race Conditions](race-conditions.md)
+  - [Relay Attacks](relay-attacks.md)
+  - [Replay Attacks](replay-attacks.md)
+  - [Session Hijacking](session-hijacking.md)
+  - [Spoofing Attacks](social-engineering.md)
+  - [Social Engineering](spoofing.md)
+  - [Timing Attacks](timing-attacks.md)
 
-#### Download
+#### Download / Contribute
 
-Check out via github:
-
-```
-git clone git@github.com:adamdecaf/fuzzdb.git
-```
+1. Check out via github: `git clone git@github.com:adamdecaf/fuzzdb.git`
+1. Create a branch and submit a Pull Request
 
 #### License
 
@@ -58,3 +71,4 @@ On the previous [project home on Google Code](https://code.google.com/p/fuzzdb/)
 #### Contributors
 
 - Adam Muntner <unix23@gmail.com>
+- Adam Shannon <adam@ashannon.us>
