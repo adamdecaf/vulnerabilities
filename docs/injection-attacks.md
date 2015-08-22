@@ -1,0 +1,2 @@
+- plugins
+- wordpress, drupal, joomla
