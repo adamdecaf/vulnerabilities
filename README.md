@@ -52,8 +52,8 @@ git clone git@github.com:adamdecaf/fuzzdb.git
 
 On the previous [project home on Google Code](https://code.google.com/p/fuzzdb/) the contents of this repository were licensed under the following:
 
-Code: http://opensource.org/licenses/BSD-3-Clause
-Content: https://creativecommons.org/licenses/by/3.0/
+- Code: http://opensource.org/licenses/BSD-3-Clause
+- Content: https://creativecommons.org/licenses/by/3.0/
 
 #### Contributors
 
