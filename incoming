@@ -3,3 +3,51 @@
 - https://github.com/danielmiessler/SecLists/pull/32
 - http://code.google.com/p/fimap/
 - http://www.aspheute.com/english/20000802.asp
+
+== encoding
+- napkin http://www.0x90.org/releases/napkin/
+
+== sqli
+- bsql-bf2 http://code.google.com/p/bsqlbf-v2/
+- web raider http://www.mavitunasecurity.com/blog/webraider/
+- sqlsus for mysql http://sqlsus.sourceforge.net/index.html
+- sfx-sqli for ms-sql http://www.kachakil.com/papers/SFX-SQLi-en.htm
+- sqlbrute - ms-sql and oracle - http://www.justinclarke.com/archives/2006/03/sqlbrute.html
+
+== proxy
+- burp suite http://portswigger.net/
+- cat http://www.contextis.co.uk/resources/tools/cat/
+- webscarab http://www.owasp.org/index.php/Category:OWASP_WebScarab_Project#Download]
+
+== fuzzer
+- owasp Zap https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+- burp intruder http://portswigger.net/
+- jbrofuzz http://sourceforge.net/projects/jbrofuzz/
+- webscarab http://www.owasp.org/index.php/Category:OWASP_WebScarab_Project#Download
+- pywebfuzz, a python implementation of fuzzdb, and much more http://code.google.com/p/pywebfuzz/
+
+== other brute force tools
+- CMS Explorer (the file patterns are in fuzzdb, but cms-explorer does more than that) http://code.google.com/p/cms-explorer/
+
+
+
+How-to's and external docs
+Burp Intruder
+
+Security Ninja tutorial for Burp Intruder - http://www.securityninja.co.uk/burp-suite-tutorial-intruder-tool-version-2
+Security Ninja Burp Suite Repeater and Comparer tutorial - http://www.securityninja.co.uk/burp-suite-tutorial-repeater-and-comparer-tools
+How to use fuzzdb's regex/errors.txt in burpsuite intruder to find more bugs http://code.google.com/p/fuzzdb/wiki/regexerrors
+Burp Intruder docs http://portswigger.net/intruder/help.html
+Burp Suite with Google Android Emulator http://cktricky.blogspot.com/2010/04/android-emulator-burpsuite.html
+Web Scarab
+
+Script that writes the page to the filesystem http://pentesterconfessions.blogspot.com/2007/12/webscarab-scripting-and-fuzzing.html
+Webscarab Fuzzer docs http://dawes.za.net/rogan/webscarab/docs/fuzzer.html
+File and Directory Discovery
+
+Interesting new way to identify directories that exist http://soroush.secproject.com/blog/2010/05/new-method-role-of-the-%E2%80%9C%E2%80%9D-character-in-mapping-the-website-directories/
+Other tools that are useful with fuzzdb
+Other software useful with fuzzdb on their own wiki page
+
+Other Stuff
+There's a list of Firefox plugins useful to web app security testers, you can subscribe to the list using the Add-On Collector plugin to make setting up a new browser for testing easy - https://addons.mozilla.org/en-US/firefox/collection/webappsec
