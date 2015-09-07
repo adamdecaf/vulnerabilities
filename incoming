@@ -3,7 +3,8 @@
 - https://github.com/danielmiessler/SecLists/pull/32
 - http://code.google.com/p/fimap/
 - http://www.aspheute.com/english/20000802.asp
-- https://www.bamsoftware.com/hacks/deflate.html
+- https://www.bamsoftware.com/hacks/deflate.html\
+- https://github.com/xmendez/wfuzz
 
 == encoding
 - napkin http://www.0x90.org/releases/napkin/
